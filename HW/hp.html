@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Homepage</title>
+
+    <style>
+       
+       .section h1 {
+           z-index: 2;
+        text-align: center;
+        font-size: 6rem;
+        font-family: Montserrat;
+        background-color: rgba(61, 61, 61, 0.7);
+        padding: 20px;
+        margin: 15px;
+        color: white;
+        position: fixed;
+    
+
+    }
+
+        .section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+    .color-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        opacity: 0.1;
+         
+         
+    }
+
+
+    nav {
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        min-height: 8vh;
+        background-color:rgba(61, 61, 61, 0.7);
+        font-family: Montserrat;
+        position: fixed;
+        width: 100%;
+        
+        
+    }
+
+    .logo {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 22px;
+    }
+
+    .nav-links {
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        
+
+    }
+
+    .nav-links li{
+        z-index: 2;
+        list-style: none;
+    }
+
+     .nav-links a{
+        z-index: 2;
+        color:white;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+     }
+
+     
+     body{
+         background-image: url(../HW/beanstalk-dark/beanstalk-dark.png);
+         height: 100%;
+         overflow-y: hidden;
+         overflow-x: hidden;
+         
+     }
+
+     .selfimage{
+         position:fixed;
+         bottom: -120px;
+         left: -80px;
+         
+     }
+
+    </style>
+
+</head>
+<body>
+
+   
+
+    <div class = "nav-bar"><nav>
+        <div class = "logo"> 
+        <h4>Aleksandar Janev</h4>
+        </div>
+        
+        <ul class = "nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="profession.html">Profession</a></li>
+        </ul>
+
+
+        
+    </div>     
+    </nav>
+
+    <div class="section">
+    
+    <h1>ABOUT ME</h1>
+    
+    </div>
+    
+
+
+    <footer class="selfimage"><img src="asdf-removebg-preview.png" alt=""></footer>
+
+    
+    <p style="position: relative; color: white; left: 300px; bottom: 250px; font-size: 20px;">Hello, my name is Aleksandar Janev. I am an aspiring programmer from Ohrid. </p>
+    <p style="position: relative; color: white; left: 300px; bottom: 250px; font-size: 20px;">I currently live in Skopje and study Software Engineering on the <a style=" color: white;" href="https://uacs.edu.mk/home/" target="_blank" >University American College.</a>  </p>
+    <p style="position: relative; color: white; left: 300px; bottom: 250px; font-size: 20px;">This page is details about me and my life. You can see my <a style=" color: white;" href="hobbies.html">hobbies</a>  and my <a style=" color: white;" href="profession.html">profession</a> .</p>
+    <p style="position: relative; color: white; left: 1200px; bottom: 480px; font-size: 20px;">University American College Skopje Location:</p>
+    
+    <div style="position: relative; left: 1200px; bottom: 500px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.8837801467057!2d21.45260731544431!3d41.981304979214045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415e9737d9573%3A0xcae3dddd6d24c9c1!2sUniversity%20American%20College%20Skopje%20-%20UACS!5e0!3m2!1sen!2smk!4v1603014385438!5m2!1sen!2smk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>-
+    </div>
+    
+</body>
+</html>

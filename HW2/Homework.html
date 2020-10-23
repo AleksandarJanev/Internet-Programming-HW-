@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         function oddOrEven(num){
+                 a = num.toString(); 
+                 l = a.length;
+  
+                // Loop to traverse number from LSB 
+                 dotSeen = false;
+
+                for ( i = l - 1; i >= 0; i--) { 
+  
+                // We ignore trailing 0s after dot 
+                if (num[i] == '0' && dotSeen == false) 
+                continue; 
+
+                // If it is '.' we will check next digit and it 
+                // means decimal part is traversed. 
+                if (num[i] == '.') { 
+                dotSeen = true; 
+                continue; 
+                } 
+
+                // If digit is divisible by 2 
+                // means even number. 
+                if ((num[i] - '0') % 2 == 0) 
+                  return true; 
+
+                 return false; 
+                 }        
+        }
+    </script>
+
+    <script>
+
+        function calculate(){
+            var num=1;
+            var text='<table border=1 width="400" align="center" style="border=1">';
+                for(var i=0;i<10;i++)
+                {
+
+
+                    text=text+"<td>" + num + "</td>";
+                    text=text+"<td>" + Math.sqrt(num) + "</td>";
+                    if (oddOrEven(num)) 
+                    text=text+"<td>" + "EVEN" + "</td>";
+                    else
+                    text=text+"<td>" + "ODD" + "</td>";
+                    
+                text=text+"</tr>";
+                }
+                text=text+"</table>";
+                
+                document.getElementById('res').innerHTML=text;
+        }
+
+        window.onload = calculate;
+
+    </script>
+
+   
+
+
+</head>
+<body>
+    <form action="#" name="frm" id="frm" >
+        <table border="1" align="center" width="400">
+            <tr>
+                <td class="tdarts" align="center"><strong>Num.</strong></td>
+                <td class="tdarts" align="center"><strong>Square root</strong></td>
+                <td class="tdarts" align="center"><strong>Odd/Even</strong></td>
+            </tr>
+            
+
+        </table>
+    </form>
+    
+
+<p id="res"></p>
+</body>
+</html>
+
+
+
