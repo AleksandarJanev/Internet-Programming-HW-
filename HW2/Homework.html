@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script>
-         function oddOrEven(num){
-                 a = num.toString(); 
-                 l = a.length;
-  
-                // Loop to traverse number from LSB 
-                 dotSeen = false;
-
-                for ( i = l - 1; i >= 0; i--) { 
-  
-                // We ignore trailing 0s after dot 
-                if (num[i] == '0' && dotSeen == false) 
-                continue; 
-
-                // If it is '.' we will check next digit and it 
-                // means decimal part is traversed. 
-                if (num[i] == '.') { 
-                dotSeen = true; 
-                continue; 
-                } 
-
-                // If digit is divisible by 2 
-                // means even number. 
-                if ((num[i] - '0') % 2 == 0) 
-                  return true; 
-
-                 return false; 
-                 }        
-        }
-    </script>
+   
 
     <script>
 
@@ -43,16 +17,21 @@
             var text='<table border=1 width="400" align="center" style="border=1">';
                 for(var i=0;i<10;i++)
                 {
+                    a = num.toString(); 
+                    l = a.length;
+                    dotSeen = false;
+  
 
 
                     text=text+"<td>" + num + "</td>";
                     text=text+"<td>" + Math.sqrt(num) + "</td>";
-                    if (oddOrEven(num)) 
+                    if (Math.sqrt(num) % 2 == 0) 
                     text=text+"<td>" + "EVEN" + "</td>";
                     else
                     text=text+"<td>" + "ODD" + "</td>";
                     
                 text=text+"</tr>";
+                num++;
                 }
                 text=text+"</table>";
                 
